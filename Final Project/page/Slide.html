@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Home</title>
+      <link rel="stylesheet" href="CSS&JS/main.css">
+      <script src="CSS&JS/lory.min.js"></script>
+      <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+      <style>
+                  a:link, a:visited {
+                    background-color: #f44336;
+                    color: white;
+                    padding: 15px 25px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                  }
+                  
+                  a:hover, a:active {
+                    background-color: red;
+                  }
+                  </style>
+</head>
+<style>
+            body {font-family: Arial, Helvetica, sans-serif;}
+            
+            /* The Modal (background) */
+            .modal {
+              display: none; /* Hidden by default */
+              position: fixed; /* Stay in place */
+              z-index: 1; /* Sit on top */
+              left: 0;
+              top: 0;
+              width: 100%; /* Full width */
+              height: 100%; /* Full height */
+              overflow: auto; /* Enable scroll if needed */
+              background-color: rgb(0,0,0); /* Fallback color */
+              background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+              -webkit-animation-name: fadeIn; /* Fade in the background */
+              -webkit-animation-duration: 0.4s;
+              animation-name: fadeIn;
+              animation-duration: 0.4s
+            }
+            
+            /* Modal Content */
+            .modal-content {
+              position: fixed;
+              bottom: 0;
+              background-color: #fefefe;
+              width: 100%;
+              -webkit-animation-name: slideIn;
+              -webkit-animation-duration: 0.4s;
+              animation-name: slideIn;
+              animation-duration: 0.4s
+            }
+            
+            /* The Close Button */
+            .close {
+              color: white;
+              float: right;
+              font-size: 28px;
+              font-weight: bold;
+            }
+            
+            .close:hover,
+            .close:focus {
+              color: #000;
+              text-decoration: none;
+              cursor: pointer;
+            }
+            
+            .modal-header {
+              padding: 2px 16px;
+              background-color: #5cb85c;
+              color: white;
+            }
+            
+            .modal-body {padding: 2px 16px;}
+            
+            .modal-footer {
+              padding: 2px 16px;
+              background-color: #5cb85c;
+              color: white;
+            }
+            
+            /* Add Animation */
+            @-webkit-keyframes slideIn {
+              from {bottom: -300px; opacity: 0} 
+              to {bottom: 0; opacity: 1}
+            }
+            
+            @keyframes slideIn {
+              from {bottom: -300px; opacity: 0}
+              to {bottom: 0; opacity: 1}
+            }
+            
+            @-webkit-keyframes fadeIn {
+              from {opacity: 0} 
+              to {opacity: 1}
+            }
+            
+            @keyframes fadeIn {
+              from {opacity: 0} 
+              to {opacity: 1}
+            }
+            </style>
+            </head>
+            <body>
+
+                                              
+                        <!-- Trigger/Open The Modal -->
+                        <button id="myBtn">Welcome Modal</button>
+                        
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+                        
+                          <!-- Modal content -->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <span class="close">&times;</span>
+                              <h2>Selamat Datang di page 2</h2>
+                            </div>
+                            <div class="modal-body">
+                              <p>Page ini menguji fungsi modal</p>
+                              <p>dan juga image slider</p>
+                            </div>
+                            <div class="modal-footer">
+                              <h3>Terima Kasih atas perhatiannya</h3>
+                            </div>
+                          </div>
+                        
+                        </div>
+                        
+                        <script>
+                        // Get the modal
+                        var modal = document.getElementById("myModal");
+                        
+                        // Get the button that opens the modal
+                        var btn = document.getElementById("myBtn");
+                        
+                        // Get the <span> element that closes the modal
+                        var span = document.getElementsByClassName("close")[0];
+                        
+                        // When the user clicks the button, open the modal 
+                        btn.onclick = function() {
+                          modal.style.display = "block";
+                        }
+                        
+                        // When the user clicks on <span> (x), close the modal
+                        span.onclick = function() {
+                          modal.style.display = "none";
+                        }
+                        
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function(event) {
+                          if (event.target == modal) {
+                            modal.style.display = "none";
+                          }
+                        }
+                        </script>
+<a href='C:/Users/Asus A442UR/Desktop/Radityo Harimurti/Hacktiv8Campus/HTML & CSS/Final Project/Login.html'><button>Logout</button></a>
+<a href='ContactUs.html'><button>ContactUs</button></a>
+
+
+      
+
+      <div class="carousel js-carousel">
+            <figure class="carousel__frame js-carousel__frame">
+                  <div class="carousel__slides js-carousel__slides">
+                        <img src="img/FTK1.jpg" class="carousel__item" />
+                        <img src="img/SE1.jpg" class="carousel__item" />
+                        <img src="img/WarbandPOPAC1.jpg" class="carousel__item" />
+                        <img src="img/XCOM1.jpg" class="carousel__item" />
+                        <img src="img/inMemoriam.jpg" class="carousel__item" />
+                        <img src="img/xcom2.jpg" class="carousel__item" />
+
+
+                  </div>
+
+                  <button class="carousel__prev js-carousel__prev">
+                        <i class="fas fa-chevron-left"></i>
+                        </button>
+                  <button class="carousel__next js-carousel__next">
+                        <i class="fas fa-chevron-right"></i>
+                  </button>
+
+            </figure>
+      </div>
+
+      <script type="text/javascript">
+
+      document.addEventListener('DOMContentLoaded', function() {
+      run();
+      });
+
+      function run() {
+            var slider = document.querySelector('.js-carousel');
+            lory(slider, {
+            infinite: 1,
+            enableMouseEvents: true,
+            classNameFrame: 'js-carousel__frame',
+            classNameSlideContainer: 'js-carousel__slides',
+            classNamePrevCtrl: 'js-carousel__prev',
+            classNameNextCtrl: 'js-carousel__next',      
+            });
+      }
+
+      </script>
+
+</script>
+</body>
+</html>
